@@ -1,0 +1,26 @@
+nav {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+nav a {
+    color: antiquewhite;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 10px;
+}
