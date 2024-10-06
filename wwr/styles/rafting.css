@@ -1,7 +1,7 @@
 :root {
     --heading-background-color: whiteblue;
     --heading-text-color: #6D6FA6;
-    --heading-font: 'montserrat', Helvetica, sans-serif;
+    --heading-font: "Bebas Neue", system-ui;
     --padding: 1rem;
     --border: 1px solid rgba(0,0,0,0.1);
 }
@@ -12,19 +12,28 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    border: #333;
+h1, h2 {
+    font-family: "Bebas Neue", system-ui;
 }
 
-h1{
-   font-weight: 100;
-   font-style: normal;
-}
+body{
+     font-family: "montserrat", sans-serif;
+     font-weight: 400;
+ }
+
+ h1{
+    font-weight: 100;
+    font-style: "Bebas Neue";
+ }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
+.bebas-neue-regular {
+    font-family: "Bebas Neue", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
