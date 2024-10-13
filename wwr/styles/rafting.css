@@ -21,6 +21,10 @@ body{
      font-weight: 400;
  }
 
+* {
+    padding: 1px;
+}
+
 h1{
     font-weight: 100;
     font-family: "Bebas Neue", sans-serif;;
