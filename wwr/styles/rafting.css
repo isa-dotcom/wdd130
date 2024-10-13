@@ -35,5 +35,10 @@ body{
     font-family: "Bebas Neue", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+.example {
+    color: red;
+}
+
   
