@@ -69,7 +69,7 @@ aside {
 }
 
 aside h2 {
-    position: relative;
+    position: absolute;
     top: 40px;
     left: 3px;
 }
