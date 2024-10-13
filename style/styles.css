@@ -59,6 +59,7 @@ main {
 }
 
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem;
     border: 2px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
@@ -69,9 +70,9 @@ aside {
 }
 
 aside h2 {
-    position: relative;
-    top: 0px;
-    left: 20px;
+    position: absolute;
+    top: 20px;
+    left: 47px;
 }
 
 main img {
