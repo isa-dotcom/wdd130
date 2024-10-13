@@ -8,7 +8,7 @@
 
 * {
     margin: 0;
-    padding: 1;
+    padding: 1px;
     box-sizing: border-box;
 }
 
@@ -23,8 +23,8 @@ body{
 
 h1{
     font-weight: 100;
-    font-style: "Bebas Neue";
- }
+    font-family: "Bebas Neue", sans-serif;;
+}
 
 .hero img {
     display: block;
