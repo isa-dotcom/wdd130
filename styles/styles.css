@@ -1,81 +1,89 @@
-:root {
-  /* 🎨 Cores */
-  --primary-color: darkcyan;
-  --text-light: white;
-  --text-dark: #333;
-  --background-light: #eee;
-
-  /* 📏 Espaçamentos */
-  --small-padding: 2px;
-  --medium-padding: 10px;
-  --large-padding: 20px;
-  --default-padding: 1rem;
-
-  /* 🖼️ Bordas e sombras */
-  --border-light: 1px solid rgb(0 0 0 / 0.2);
-  --border-dark: 1px solid #000;
-  --box-shadow: 0 0 30px gray;
-
-  /* 📐 Larguras */
-  --main-width: 840px;
-  --aside-width: 20rem;
-  --img-small: 150px;
-  --img-medium: 200px;
+/*:root {}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 nav {
-  background-color: var(--primary-color);
-  padding: var(--medium-padding);
+    background-color: darkcyan;
+    padding: 10px;
 }
 
 nav a {
-  color: var(--text-light);
-  display: block;
-  padding: var(--large-padding);
+    color: white;
+    display: block;
+    padding: 20px;
 }
 
 h1 {
-  color: var(--primary-color);
+    color: darkcyan;
 }
 
-img {
-  width: var(--img-small);
-  height: auto;
-  border: var(--border-dark);
-  padding: var(--small-padding);
-  box-shadow: var(--box-shadow);
+img { 
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 p {
-  padding: 0;
+    padding: 0;
 }
 
 main {
-  max-width: var(--main-width);
+    max-width: 840px;
 }
 
 aside {
-  width: var(--aside-width);
-  margin: var(--default-padding);
-  border: var(--border-light); /* 1️⃣ */
-  padding: var(--default-padding);
-  background-color: var(--background-light);
-  color: var(--text-dark);
-  text-align: center;
+  position: relative;
+    width: 320px;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
 }
 
 aside img {
-  width: var(--img-medium);
-  height: auto;
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  top: 20px;
+  left: 23%;
 }
 
 main img {
-  width: var(--img-small);
-  height: auto;
+    width: 120px;
+    height: auto;
+    float: right;
+    margin-left: 10px;
 }
 
 footer {
-  margin-top: 15px;
-  border-top: var(--border-dark);
-  text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/*  Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: rgb(159, 219, 219);
+  color: #000;
+}
+
+main ul {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: rgb(159, 219, 219);
+  color: #000;
 }
