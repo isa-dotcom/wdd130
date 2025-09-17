@@ -1,56 +1,81 @@
+:root {
+  /* 🎨 Cores */
+  --primary-color: darkcyan;
+  --text-light: white;
+  --text-dark: #333;
+  --background-light: #eee;
+
+  /* 📏 Espaçamentos */
+  --small-padding: 2px;
+  --medium-padding: 10px;
+  --large-padding: 20px;
+  --default-padding: 1rem;
+
+  /* 🖼️ Bordas e sombras */
+  --border-light: 1px solid rgb(0 0 0 / 0.2);
+  --border-dark: 1px solid #000;
+  --box-shadow: 0 0 30px gray;
+
+  /* 📐 Larguras */
+  --main-width: 840px;
+  --aside-width: 20rem;
+  --img-small: 150px;
+  --img-medium: 200px;
+}
+
 nav {
-    background-color: darkcyan;
-    padding: 10px;
+  background-color: var(--primary-color);
+  padding: var(--medium-padding);
 }
 
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+  color: var(--text-light);
+  display: block;
+  padding: var(--large-padding);
 }
 
 h1 {
-    color: darkcyan;
+  color: var(--primary-color);
 }
 
-img { 
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+img {
+  width: var(--img-small);
+  height: auto;
+  border: var(--border-dark);
+  padding: var(--small-padding);
+  box-shadow: var(--box-shadow);
 }
 
 p {
-    padding: 0;
+  padding: 0;
 }
 
 main {
-    max-width: 840px;
+  max-width: var(--main-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+  width: var(--aside-width);
+  margin: var(--default-padding);
+  border: var(--border-light); /* 1️⃣ */
+  padding: var(--default-padding);
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  text-align: center;
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+  width: var(--img-medium);
+  height: auto;
 }
 
 main img {
-    width: 150px;
-    height: auto;
+  width: var(--img-small);
+  height: auto;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+  margin-top: 15px;
+  border-top: var(--border-dark);
+  text-align: center;
 }
