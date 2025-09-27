@@ -26,12 +26,6 @@ header, main, footer {
   margin: 0 auto;
 }
 
-main {
-  max-width: 1100px;  /* ou 100% da tela */
-  margin: 0 auto;
-  width: 100%;
-}
-
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -111,11 +105,17 @@ header nav a {
 /* =============================
    HISTORY SECTION
 ============================= */
+main {
+  max-width: 1100px;  /* ou 100% da tela */
+  margin: 0 auto;
+  width: 100%;
+}
+
 main section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
-  display: row;
+  display: flex row;
 }
 
 /* =============================
