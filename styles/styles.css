@@ -29,13 +29,14 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff; /* shorthand for white */
+  color: white; /* shorthand for white */
 }
 
 h1 {
   color: darkcyan;
+  margin: 10px 0;
   padding-left: 1rem;
-  border-bottom: #000;
+  border-bottom: 2px solid darkcyan;
 }
 
 img { 
@@ -75,7 +76,6 @@ aside {
   text-align: center;
   grid-column: 1/2;
   grid-row: 1/2;
-  
 }
 
 aside img {
