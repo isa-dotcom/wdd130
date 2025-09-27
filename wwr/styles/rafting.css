@@ -115,7 +115,8 @@ main section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
-  display: flex row;
+  display: flex;
+  flex-direction: column;
 }
 
 /* =============================
