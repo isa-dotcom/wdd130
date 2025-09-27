@@ -20,6 +20,7 @@ body {
   color: var(--accent2-color);
 }
 
+/* LIMITA LARGURA DAS PRINCIPAIS SEÇÕES */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -35,9 +36,33 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* Social Media */
-.socialmedia a {
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* logo + nav */
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  background-color: var(--accent1-color);
+}
+
+header img {
+  max-width: 60%;
+  height: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;                /* FLEX no nav */
+  justify-content: flex-end;    /* alinhado à direita */
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
   text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 /* Hero section */
@@ -75,4 +100,59 @@ nav, p, section, article {
   float: right;
   width: 125px;
   margin-left: 10px;
+}
+
+/* =============================
+   HISTORY SECTION
+============================= */
+main section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  display: row;
+}
+
+/* =============================
+   ADVENTURE GALLERY (5 IMAGENS)
+============================= */
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* sempre 5 colunas */
+  gap: 1rem;
+}
+
+.adventure-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* =============================
+   FOOTER E SOCIAL MEDIA
+============================= */
+footer {
+  display: flex;
+  justify-content: space-between; /* texto à esquerda, ícones à direita */
+  align-items: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.socialmedia a {
+  text-decoration: none;
 }
