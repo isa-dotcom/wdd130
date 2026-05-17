@@ -30,11 +30,11 @@ main {
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
+    width: 20em;
+    margin: 1em;
     border: 1px solid rgb(0 0 0 / 0.2);
     /* 1️⃣ */
-    padding: 1rem;
+    padding: 1em;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -42,7 +42,7 @@ aside {
 
 aside img {
     width: 200px;
-    height: auto
+    height: auto;
 }
 
 main img {
@@ -55,7 +55,7 @@ p {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
