@@ -40,6 +40,19 @@ footer {
     height: auto;
 }
 
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
 h1 {
     position: absolute;
     top: 20px;
