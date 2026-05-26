@@ -1,7 +1,7 @@
 :root {
-    --primary-color: rgb(255, 255, 134);
+    --primary-color: rgb(255, 255, 0);
     --secondary-color: #faa661;
-    --accent1-color: #111c20;
+    --accent1-color: #233d46;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -43,6 +43,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 nav,
@@ -51,6 +52,10 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav a {
+    color: var(--secondary-color);
 }
 
 h1 {
