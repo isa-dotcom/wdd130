@@ -72,13 +72,14 @@ h1 {
     padding: 16px;
     background-color: var(--accent2-color);
     color: var(--accent1-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    /*Improving*/
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 16px;
 }
