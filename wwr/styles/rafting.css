@@ -59,7 +59,7 @@ article {
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
@@ -73,7 +73,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .hero {
