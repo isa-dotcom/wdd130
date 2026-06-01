@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(255, 255, 0);
+    --primary-color: #4e8a9e;
     --secondary-color: #faa661;
     --accent1-color: #233d46;
     --accent2-color: #e9c46a;
@@ -115,7 +115,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     padding: 5px;
     color: white;
 }
