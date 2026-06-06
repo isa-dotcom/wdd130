@@ -15,10 +15,10 @@
     <header>
         <img src="images/logo.png" alt="Rafting travel logo" width="200">
         <nav>
-            <a href="index.html">Home</a></li>
-            <a href="about.html">About Us</a></li>
-            <a href="trips.html">Trips</a></li>
-            <a href="contact.html">Contact Us</a></li>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
@@ -35,23 +35,55 @@
             <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=" loading="lazy"
                   allowfullscreen referrerpolicy="no-referrer-when-downgrade"> </iframe> </div>
             <form>
-                <div class="form-item"> <label for="name">Name</label> <input type="text" id="name"
-                      name="name" required> </div>
-                <div class="form-item"> <label for="email">Email</label> <input type="email"
-                      id="email" name="email" required> </div>
+
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
                 <fieldset>
-                    <legend>Message Purpose</legend> <label> <input type="radio" name="purpose"
-                          value="general-inquiry" required> General Inquiry </label> <label> <input
-                          type="radio" name="purpose" value="reservation-question"> Reservation
-                        Question
-                    </label> <label> <input type="radio" name="purpose" value="website-suggestion">
-                        Website Suggestion </label>
+                    <legend>Message Purpose</legend>
+
+                    <label for="general-inquiry">
+                        <input type="radio" id="general-inquiry" name="purpose"
+                          value="general-inquiry" required>
+                        General Inquiry
+                    </label>
+
+                    <label for="reservation-question">
+                        <input type="radio" id="reservation-question" name="purpose"
+                          value="reservation-question">
+                        Reservation Question
+                    </label>
+
+                    <label for="website-suggestion">
+                        <input type="radio" id="website-suggestion" name="purpose"
+                          value="website-suggestion">
+                        Website Suggestion
+                    </label>
                 </fieldset>
-                <div class="form-item"> <label for="message">Message</label> <textarea id="message"
-                      name="message" rows="5"> </textarea> </div> <label class="checkbox"> <input
-                      type="checkbox" name="newsletter"> Please subscribe me to the monthly
-                    newsletter
-                </label> <button type="submit"> Send My Message </button>
+
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5">
+                    </textarea>
+                </div>
+
+                <label for="newsletter" class="checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">
+                    Send My Message
+                </button>
+
             </form>
         </section>
         <section class="employees">
