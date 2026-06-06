@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description"
+      content="Contact White Water Rafting for reservations, questions, and information about our rafting adventures.">
+    <meta name="author" content="Isadora Paula">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting travel logo" width="200">
+        <nav>
+            <a href="index.html">Home</a></li>
+            <a href="about.html">About Us</a></li>
+            <a href="trips.html">Trips</a></li>
+            <a href="contact.html">Contact Us</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <address>
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p>+1 (999) 999-9999</p>
+                <p>info@whitewaterrafting.com</p>
+            </address>
+        </section>
+        <section class="contact-grid">
+            <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=" loading="lazy"
+                  allowfullscreen referrerpolicy="no-referrer-when-downgrade"> </iframe> </div>
+            <form>
+                <div class="form-item"> <label for="name">Name</label> <input type="text" id="name"
+                      name="name" required> </div>
+                <div class="form-item"> <label for="email">Email</label> <input type="email"
+                      id="email" name="email" required> </div>
+                <fieldset>
+                    <legend>Message Purpose</legend> <label> <input type="radio" name="purpose"
+                          value="general-inquiry" required> General Inquiry </label> <label> <input
+                          type="radio" name="purpose" value="reservation-question"> Reservation
+                        Question
+                    </label> <label> <input type="radio" name="purpose" value="website-suggestion">
+                        Website Suggestion </label>
+                </fieldset>
+                <div class="form-item"> <label for="message">Message</label> <textarea id="message"
+                      name="message" rows="5"> </textarea> </div> <label class="checkbox"> <input
+                      type="checkbox" name="newsletter"> Please subscribe me to the monthly
+                    newsletter
+                </label> <button type="submit"> Send My Message </button>
+            </form>
+        </section>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-grid">
+                <figure> <img src="images/sarah.jpg" alt="Operations Manager">
+                    <figcaption>
+                        Sarah Johnson
+                        <br>
+                        <span>Operations Manager</span>
+                    </figcaption>
+                </figure>
+                <figure> <img src="images/michael.jpg" alt="Senior River Guide">
+                    <figcaption>
+                        Michael Davis
+                        <br>
+                        <span>Senior River Guide</span>
+                    </figcaption>
+                </figure>
+                <figure> <img src="images/emily.jpg" alt="Customer Service Specialist">
+                    <figcaption>
+                        Emily Carter
+                        <br>
+                        <span>Customer Service Specialist</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 White Water Rafting Adventures | Built by Isadora Paula</p>
+        <nav class="socialmedia">
+            <a href="https://whatsapp.com">
+                <img src="images/whatsapp.png" alt="Whatsapp Icon" width="50">
+            </a>
+            <a href="https://Instagram.com">
+                <img src="images/instagram.png" alt="Instagram Icon" width="50">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="Linkedin Icon" width="50">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
