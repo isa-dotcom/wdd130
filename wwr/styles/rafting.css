@@ -5,6 +5,7 @@
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+    --border-color: #cccccc;
 }
 
 * {
@@ -19,7 +20,6 @@ body {
 }
 
 /* LIMITA LARGURA DAS PRINCIPAIS SEÇÕES */
-header,
 main,
 footer {
     max-width: 840px;
@@ -32,6 +32,8 @@ header {
     grid-template-columns: 200px 1fr;
     align-items: center;
     padding: 20px;
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 header img {
@@ -42,7 +44,6 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-
 }
 
 h1,
@@ -50,12 +51,13 @@ h2 {
     font-family: var(--heading-font);
 }
 
-nav,
-p,
-section,
-article {
+p {
     margin: 16px;
     padding: 8px;
+}
+
+section {
+    margin: 16px;
 }
 
 nav a {
@@ -72,15 +74,19 @@ nav a:hover {
 .hero h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
+    margin: 0;
     padding: 16px;
     text-align: center;
     background-color: rgba(35, 61, 70, 0.85);
-    color: white;
+    color: var(--secondary-color);
 }
 
 .hero {
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .hero > img {
@@ -201,7 +207,7 @@ h2 {
 iframe {
     width: 100%;
     height: 350px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
 }
 
 form {
@@ -245,7 +251,7 @@ button {
 }
 
 .employee-grid figure {
-    background-color: white;
+    background-color: var(--secondary-color);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -297,4 +303,169 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/* HOME PAGE */
+
+/* Hero Section */
+
+.cta-button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 1rem 2rem;
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Newsletter */
+.newsletter {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-weight: bold;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Grid Section */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    margin: 3rem 0;
+}
+
+.home-grid article {
+    background-color: var(--secondary-color);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+.home-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.home-grid h2 {
+    margin: 1rem 0;
+}
+
+.home-grid p {
+    padding: 0 1rem 1rem;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+}
+
+/* TRIPS PAGE */
+
+.trips-hero {
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.contact-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.trip-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trip-card h2 {
+    margin: 1rem 0;
+}
+
+.trip-table {
+    margin: 3rem 0;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f5f5f5;
 }
